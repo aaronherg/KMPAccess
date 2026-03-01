@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- UBICACIÓN -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Necesitamos acceder a tu ubicación para mostrar el mapa y rutas</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Necesitamos acceso a tu ubicación incluso en segundo plano para funciones avanzadas de ubicación</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Necesitamos acceder a tu ubicación incluso cuando la app está en segundo plano</string>
+
+    <!-- TRACKING (AppTrackingTransparency) -->
+    <key>NSUserTrackingUsageDescription</key>
+    <string>Necesitamos tu permiso para seguimiento de anuncios y analítica</string>
+
+    <!-- FACE ID / BIOMÉTRICOS -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>Necesitamos usar Face ID para autenticación segura</string>
+
+    <!-- MICROFONO -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Necesitamos acceso al micrófono para grabar audio</string>
+
+    <!-- CAMARA -->
+    <key>NSCameraUsageDescription</key>
+    <string>Necesitamos acceso a la cámara para capturar imágenes</string>
+
+    <!-- BLUETOOTH -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Necesitamos Bluetooth para conectar dispositivos como impresoras</string>
+
+    <!-- ARCHIVOS / FOTOS / GALERÍA -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Necesitamos acceso a tus fotos para seleccionarlas</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Necesitamos permiso para agregar fotos a tu galería</string>
+
+    <!-- CONTACTOS -->
+    <key>NSContactsUsageDescription</key>
+    <string>Necesitamos acceso a tus contactos para funciones sociales y de comunicación</string>
+
+    <!-- NOTIFICACIONES -->
+    <key>NSUserNotificationUsageDescription</key>
+    <string>Necesitamos permisos de notificaciones para avisarte sobre eventos y actualizaciones</string>
+
+    <!-- CALENDARIO -->
+    <key>NSCalendarsUsageDescription</key>
+    <string>Necesitamos acceso a tu calendario para agregar eventos y recordatorios</string>
+
+    <!-- RECORDATORIOS -->
+    <key>NSRemindersUsageDescription</key>
+    <string>Necesitamos acceso a tus recordatorios para funciones de agenda</string>
+
+    <!-- SIRI -->
+    <key>NSSiriUsageDescription</key>
+    <string>Necesitamos acceso a Siri para funciones de asistente y atajos</string>
+
+    <!-- MOTION / FITNESS -->
+    <key>NSMotionUsageDescription</key>
+    <string>Necesitamos acceso a sensores de movimiento para actividades y estadísticas</string>
+
+    <!-- HOMEKIT -->
+    <key>NSHomeKitUsageDescription</key>
+    <string>Necesitamos acceso a HomeKit para controlar dispositivos del hogar</string>
+
+    <!-- MEDIA LIBRARY (Apple Music) -->
+    <key>NSAppleMusicUsageDescription</key>
+    <string>Necesitamos acceso a tu librería de música para reproducir contenido</string>
+
+    <!-- RED LOCAL (iOS 14+) -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Necesitamos acceso a la red local para conectar dispositivos cercanos</string>
+
+    <!-- NFC -->
+    <key>NFCReaderUsageDescription</key>
+    <string>Se requiere NFC para leer etiquetas compatibles</string>
+
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+</dict>
+</plist>
