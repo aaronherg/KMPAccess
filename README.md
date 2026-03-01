@@ -1,31 +1,48 @@
 <div align="center" width="50">
 
-  <img src="https://github.com/aaronherg/KMPAccess/blob/main/composeApp/src/androidMain/res/drawable/kmpaccess.png?raw=true" alt="KMPAccess Logo" width="60%"/><br> 
+  <img src="https://github.com/aaronherg/KMPAccess/blob/main/composeApp/src/androidMain/res/drawable/kmpaccess.png?raw=true" 
+       alt="KMPAccess Logo" width="30%"/><br> 
 
   <p><strong>KMPAccess - Gestión de permisos multiplataforma con Kotlin</strong></p>
 
-  <div>
-    <a href="#" style="display: inline-block;">
-      <img src="https://github.com/aaronherg/README/blob/main/recursos/kmpaccess_bluet.jpeg?raw=true" alt="Captura 1" style="width: 30%; margin: 0 1%;">
-    </a>
-    <a href="#" style="display: inline-block;">
-      <img src="https://github.com/aaronherg/README/blob/main/recursos/kmpaccess_bluet_act.jpeg?raw=true" alt="Captura 2" style="width: 30%; margin: 0 1%;">
-    </a>
-    
-    <a href="#" style="display: inline-block;">
-      <img src="https://github.com/aaronherg/README/blob/main/recursos/kmpaccess_cam.jpeg?raw=true" alt="Captura 3" style="width: 30%; margin: 0 1%;">
-    </a>
-    <a href="#" style="display: inline-block;">
-      <img src="https://github.com/aaronherg/README/blob/main/recursos/kmpaccess_cam_act.jpeg?raw=true" alt="Captura 3" style="width: 30%; margin: 0 1%;">
-    </a>
-    
-  </div>
+</div>
+
+<hr>
+
+<!-- ======================== ANDROID ======================== -->
+
+<div align="center">
+  <h2>📱 Android</h2>
+
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_bluet.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_bluet_act.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_cam.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_cam_act.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_cont.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_cont_act.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_micro.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_micro_act.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_notif.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_notif_act.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_ubic.jpeg?raw=true" width="12%">
+  <img src="https://github.com/aaronherg/aaronherg/blob/main/recursos/kmpaccess_ubic_act.jpeg?raw=true" width="12%">
 
 </div>
 
-<hr></hr>
+<hr>
 
-<div align="center" width="50">
+<!-- ======================== IPHONE ======================== -->
+
+<div align="center">
+  <h2>🍎 iPhone</h2>
+
+  <!-- Aqui van las capturas de iphone -->
+
+</div>
+
+<hr>
+
+<div align="center">
   <p><strong>🚀 FUNCIONALIDADES PRINCIPALES DE KMPAccess</strong></p>
 </div>
 
@@ -51,34 +68,17 @@
   <li>Proyecto modular listo para integrar en otros proyectos KMP.</li>
 </ul>
 
-<hr></hr>
+<hr>
 
-<div align="center" width="50">
+<div align="center">
   <p><strong>👑 CONTRIBUCIÓN</strong></p>
   ¡Agradecemos cualquier contribución para mejorar KMPAccess!<br>
   Haz un fork, realiza tus cambios y envía un pull request.
 </div>
 
-<hr></hr>
+<hr>
 
-<div align="center" width="50">
+<div align="center">
   <p><strong>📝 LICENCIA</strong></p>
   Este proyecto está bajo la licencia MIT.
-</div>
-
-<hr></hr>
-
-<div align="center" width="50">
-  <p><strong>👨‍🔧 SOPORTE TÉCNICO</strong></p>
-  <a href="https://www.instagram.com/">
-    <img src="https://github.com/tu-usuario/README/blob/main/recursos/instagram.png?raw=true" alt="Instagram" width="5%">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://www.facebook.com/">
-    <img src="https://github.com/tu-usuario/README/blob/main/recursos/facebook.png?raw=true" alt="Facebook" width="5%">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://twitter.com/">
-    <img src="https://github.com/tu-usuario/README/blob/main/recursos/twitter.png?raw=true" alt="Twitter" width="5%">
-  </a>
 </div>
