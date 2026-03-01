@@ -1,6 +1,6 @@
 <div align="center" width="50">
 
-  <img src="https://github.com/tu-usuario/README/blob/main/recursos/kmpaccess_logo.png?raw=true" alt="KMPAccess Logo" width="60%"/><br> 
+  <img src="https://github.com/aaronherg/KMPAccess/blob/main/composeApp/src/androidMain/res/drawable/kmpaccess.png?raw=true" alt="KMPAccess Logo" width="60%"/><br> 
 
   <p><strong>KMPAccess - Gestión de permisos multiplataforma con Kotlin</strong></p>
 
