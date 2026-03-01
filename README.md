@@ -6,14 +6,19 @@
 
   <div>
     <a href="#" style="display: inline-block;">
-      <img src="https://github.com/tu-usuario/README/blob/main/recursos/captura1.png?raw=true" alt="Captura 1" style="width: 30%; margin: 0 1%;">
+      <img src="https://github.com/aaronherg/README/blob/main/recursos/kmpaccess_bluet.jpeg?raw=true" alt="Captura 1" style="width: 30%; margin: 0 1%;">
     </a>
     <a href="#" style="display: inline-block;">
-      <img src="https://github.com/tu-usuario/README/blob/main/recursos/captura2.png?raw=true" alt="Captura 2" style="width: 30%; margin: 0 1%;">
+      <img src="https://github.com/aaronherg/README/blob/main/recursos/kmpaccess_bluet_act.jpeg?raw=true" alt="Captura 2" style="width: 30%; margin: 0 1%;">
+    </a>
+    
+    <a href="#" style="display: inline-block;">
+      <img src="https://github.com/aaronherg/README/blob/main/recursos/kmpaccess_cam.jpeg?raw=true" alt="Captura 3" style="width: 30%; margin: 0 1%;">
     </a>
     <a href="#" style="display: inline-block;">
-      <img src="https://github.com/tu-usuario/README/blob/main/recursos/captura3.png?raw=true" alt="Captura 3" style="width: 30%; margin: 0 1%;">
+      <img src="https://github.com/aaronherg/README/blob/main/recursos/kmpaccess_cam_act.jpeg?raw=true" alt="Captura 3" style="width: 30%; margin: 0 1%;">
     </a>
+    
   </div>
 
 </div>
