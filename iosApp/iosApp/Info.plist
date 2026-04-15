@@ -20,8 +20,10 @@
     <string>Necesitamos usar Face ID para autenticación segura</string>
 
     <!-- MICROFONO -->
-    <key>NSMicrophoneUsageDescription</key>
-    <string>Necesitamos acceso al micrófono para grabar audio</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Se necesita para convertir voz a texto</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Se necesita para usar el micrófono</string>
 
     <!-- CAMARA -->
     <key>NSCameraUsageDescription</key>
