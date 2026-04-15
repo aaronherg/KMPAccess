@@ -54,6 +54,8 @@ import platform.Photos.PHAuthorizationStatusAuthorized
 import platform.Photos.PHAuthorizationStatusDenied
 import platform.Photos.PHAuthorizationStatusLimited
 import platform.Photos.PHPhotoLibrary
+import platform.Speech.SFSpeechRecognizer
+import platform.Speech.SFSpeechRecognizerAuthorizationStatus
 import platform.UIKit.UIApplication
 import platform.UIKit.UIApplicationOpenSettingsURLString
 import platform.UserNotifications.UNAuthorizationOptionAlert
@@ -259,26 +261,47 @@ actual suspend fun solicitarPermisoFaceID(): PermisoRespuesta = withContext(Disp
 ////////////////////////////////////////////////////////
 // MICROFONO
 // NSMicrophoneUsageDescription
+// NSSpeechRecognitionUsageDescription
 ////////////////////////////////////////////////////////
 actual suspend fun verificarPermisoMicrofono(): PermisoRespuesta {
-    val granted = AVAudioSession.sharedInstance().recordPermission() == AVAudioSessionRecordPermissionGranted
-    return if (granted) PermisoRespuesta(true, "Permiso Otorgado")
-    else PermisoRespuesta(false, "Permiso Denegado. Asigna el permiso manualmente desde configuración.")
+    val micGranted = AVAudioSession.sharedInstance().recordPermission() == AVAudioSessionRecordPermissionGranted
+    val speechGranted = SFSpeechRecognizer.authorizationStatus() == SFSpeechRecognizerAuthorizationStatus.SFSpeechRecognizerAuthorizationStatusAuthorized
+
+    return if (micGranted && speechGranted)
+        PermisoRespuesta(true, "Permiso Otorgado")
+    else
+        PermisoRespuesta(false, "Permiso Denegado. Asigna el permiso manualmente desde configuración.")
 }
 
 actual suspend fun solicitarPermisoMicrofono(): PermisoRespuesta = withContext(Dispatchers.Main) {
-    val status = AVAudioSession.sharedInstance().recordPermission()
-    if (status == AVAudioSessionRecordPermissionDenied) {
+    val micStatus = AVAudioSession.sharedInstance().recordPermission()
+    val speechStatus = SFSpeechRecognizer.authorizationStatus()
+
+    if (micStatus == AVAudioSessionRecordPermissionDenied ||
+        speechStatus == SFSpeechRecognizerAuthorizationStatus.SFSpeechRecognizerAuthorizationStatusDenied
+    ) {
         abrirConfiguracion()
-        PermisoRespuesta(false, "Permiso Denegado. Asigna el permiso manualmente desde configuración.")
-    } else {
-        suspendCancellableCoroutine { cont ->
-            AVAudioSession.sharedInstance().requestRecordPermission { granted ->
-                cont.resume(PermisoRespuesta(granted, if (granted) "Permiso Otorgado" else "Permiso Denegado. Asigna el permiso manualmente desde configuración."))
-            }
+        return@withContext PermisoRespuesta(false, "Permiso Denegado. Asigna el permiso manualmente desde configuración.")
+    }
+
+    val micGranted = suspendCancellableCoroutine { cont ->
+        AVAudioSession.sharedInstance().requestRecordPermission { granted ->
+            cont.resume(granted)
         }
     }
+
+    val speechGranted = suspendCancellableCoroutine { cont ->
+        SFSpeechRecognizer.requestAuthorization { status ->
+            cont.resume(status == SFSpeechRecognizerAuthorizationStatus.SFSpeechRecognizerAuthorizationStatusAuthorized)
+        }
+    }
+
+    return@withContext if (micGranted && speechGranted)
+        PermisoRespuesta(true, "Permiso Otorgado")
+    else
+        PermisoRespuesta(false, "Permiso Denegado. Asigna el permiso manualmente desde configuración.")
 }
+
 
 
 ////////////////////////////////////////////////////////
